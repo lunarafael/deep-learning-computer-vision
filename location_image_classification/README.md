@@ -9,7 +9,9 @@ O **Deep Learning** revolucionou a maneira como abordamos a visão computacional
 
 As redes neurais convolucionais (CNNs) são compostas por diferentes tipos de camadas que desempenham papéis essenciais no processamento de imagens para classificação e localização de objetos. Vamos explorar as três camadas principais: **camada de convolução**, **camada de pooling** e **camada densa**.
 
-#### 1. Camada de Convolução (Convolutional Layer)
+#### 1. Camada de Entrada
+
+#### 2. Camadas de Convolução (Convolutional Layers)
 
 A camada de convolução é a base das CNNs e é responsável por extrair características importantes das imagens.
 
@@ -19,27 +21,23 @@ A camada de convolução é a base das CNNs e é responsável por extrair caract
 
 - **Detecção de Características Locais**:
   - As camadas iniciais aprendem características simples como bordas e formas, enquanto camadas mais profundas capturam padrões complexos.
-  
-- **Receptive Field (Campo Receptivo)**:
-  - Refere-se à área da imagem "vista" pelo filtro, que aumenta à medida que a rede se aprofunda, permitindo uma visão global da imagem.
 
-#### 2. Camada de Pooling (Pooling Layer)
+#### 3. Camadas de Pooling (Pooling Layers)
 
 A camada de pooling reduz a dimensionalidade dos mapas de características e melhora a eficiência do modelo.
 
-- **Max-Pooling**:
+- **Max Pooling**:
   - Seleciona o valor máximo em uma janela de tamanho fixo (por exemplo, 2x2), preservando as características mais importantes.
   
 - **Average Pooling**:
   - Calcula a média dos valores na janela, suavizando as informações.
+ 
+- **Global Pooling**:
+  - Reduz o valor de uma janela inteira para apenas um valor. Pode ser utilizado com o **Average** ou **Max**.
 
-- **Vantagens do Pooling**:
-  - **Redução de Dimensionalidade**: Diminui o tamanho dos mapas de características.
-  - **Invariância à Translação**: Torna o modelo robusto a pequenas mudanças e deslocamentos na imagem.
+#### 4. Camada Densa (Fully Connected Layer)
 
-#### 3. Camada Densa (Fully Connected Layer)
-
-As camadas densas, ou **fully connected layers**, conectam cada neurônio a todos os neurônios da camada anterior.
+As camadas densas, ou **fully connected layers**, conectam cada neurônio a todos os neurônios da camada anterior. O trabalho dessas camadas é manter apenas as características mais importantes de uma imagem.
 
 - **Conexões Totais**:
   - Combinam as características extraídas para tomar decisões finais sobre a classificação da imagem.
@@ -51,25 +49,9 @@ As camadas densas, ou **fully connected layers**, conectam cada neurônio a todo
   - A última camada frequentemente usa **softmax** para converter saídas em probabilidades de classes.
   - Camadas intermediárias usam **ReLU** para capturar não linearidades.
 
-#### Resumo das Funções das Camadas
-
-- **Camada de Convolução**: Extrai características locais de baixa e alta complexidade da imagem.
-- **Camada de Pooling**: Reduz a dimensionalidade e aumenta a robustez a variações espaciais.
-- **Camada Densa**: Agrega as características para realizar a tarefa de classificação ou regressão.
-
-### Função de Perda Combinada
-
-A função de perda em problemas de classificação com localização é uma combinação de dois termos principais:
-
-- **Perda de Classificação (Classification Loss)**: Esta perda mede a diferença entre as classes previstas e as reais. Normalmente, a perda de entropia cruzada (cross-entropy loss) é usada para essa finalidade.
-  
-- **Perda de Localização (Localization Loss)**: Calcula o erro entre as caixas delimitadoras previstas e as reais. Métricas como o erro quadrático médio (mean squared error) ou a **Interseção sobre União (Intersection over Union - IoU)** são utilizadas para avaliar a precisão das caixas delimitadoras.
-
-Essa combinação de perdas permite que o modelo aprenda simultaneamente a identificar a classe do objeto e a prever suas coordenadas.
-
 ## Arquiteturas Avançadas para Classificação com Localização
 
-**Deep Learning** impulsionou o desenvolvimento de várias arquiteturas avançadas que são amplamente utilizadas para tarefas de detecção e localização de objetos:
+O uso de **Deep Learning** impulsionou o desenvolvimento de várias arquiteturas avançadas que são amplamente utilizadas para tarefas de detecção e localização de objetos:
 
 - **YOLO (You Only Look Once)**:
   - YOLO é uma das arquiteturas mais rápidas e eficientes para detecção de objetos. Ele utiliza uma abordagem de previsão única, onde toda a imagem é analisada apenas uma vez (daí o nome "You Only Look Once"), dividindo a imagem em uma grade e prevendo simultaneamente as classes e as caixas delimitadoras para cada célula dessa grade. A eficiência de YOLO o torna ideal para aplicações em tempo real, como vigilância por vídeo e carros autônomos.
@@ -91,7 +73,7 @@ Nos últimos anos, várias técnicas e aprimoramentos foram desenvolvidos para m
   - Técnicas de data augmentation, como rotação, espelhamento, recorte e ajuste de cores, são usadas para aumentar a diversidade dos dados de treinamento. Isso ajuda a tornar o modelo mais robusto contra variações nas imagens e melhora sua capacidade de generalização.
 
 - **Anchor Boxes e Non-Maximum Suppression (NMS)**:
-  - A introdução de **anchor boxes** permite que os modelos detectem múltiplos objetos de diferentes tamanhos e formas em uma única imagem. O uso de **Non-Maximum Suppression (NMS)** elimina previsões redundantes, garantindo que apenas a melhor caixa delimitadora seja selecionada para cada objeto.
+  - A introdução de **anchor boxes**, que utilizam CNNs, permite que os modelos detectem múltiplos objetos de diferentes tamanhos e formas em uma única imagem. Já o uso de **Non-Maximum Suppression (NMS)** elimina previsões redundantes, garantindo que apenas a melhor caixa delimitadora seja selecionada para cada objeto.
 
 ## Aplicações Reais do Deep Learning em Localização de Objetos
 
@@ -112,3 +94,8 @@ O uso de **Deep Learning** na detecção e localização de objetos em imagens t
 - https://www.insightlab.ufc.br/aprenda-a-criar-e-treinar-uma-rede-neural-convolucional-cnn/#:~:text=Um%20modelo%20que%20utiliza%20CNN,Pooling%20e%20Camada%20Totalmente%20Conectada.
 - https://www.geeksforgeeks.org/introduction-convolution-neural-network/#convolution-neural-network
 - https://pt.linkedin.com/pulse/o-poder-das-redes-neurais-convolucionais-um-guia-pr%C3%A1tico-couto-j7omf
+- https://medium.com/@abhishekjainindore24/pooling-and-their-types-in-cnn-4a4b8a7a4611
+- https://ubiai.tools/what-are-the-difficulties-associated-with-data-augmentation/
+- https://aws.amazon.com/what-is/transfer-learning/#:~:text=Transfer%20learning%20(TL)%20is%20a,it%20is%20ready%20for%20production.
+- https://medium.com/analytics-vidhya/non-max-suppression-nms-6623e6572536
+- https://www.thinkautonomous.ai/blog/anchor-boxes/
