@@ -1,4 +1,7 @@
 # Classificação de imagens com localização (object localization)
+
+A classificação de imagens com localização é uma tarefa de visão computacional que combina a identificação da classe de objetos em uma imagem com a determinação de sua posição, representada por uma caixa delimitadora. Essa abordagem permite não apenas classificar o objeto, mas também localizar sua área dentro da imagem.
+
 O uso de **Deep Learning** na detecção e localização de objetos em imagens transformou significativamente o campo da visão computacional. Ele introduziu uma série de técnicas e modelos capazes de processar e interpretar dados visuais com um nível de precisão e eficiência que era impossível com métodos tradicionais. Vamos explorar mais detalhadamente como as redes neurais convolucionais (CNNs) e outras abordagens de Deep Learning são aplicadas na **classificação de imagens com localização de objetos**, usando o contexto do que foi discutido anteriormente.
 
 ## O Papel do Deep Learning na Classificação e Localização de Objetos
