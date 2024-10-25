@@ -56,3 +56,4 @@ Mais exemplos disponíveis no diretório [validation_batches](results/validation
 ![batch1](results/validation_batches/val_batch1_pred.jpg)
 
 ### Vídeo de Detecção
+[![Car detection video](https://img.youtube.com/vi/jdTRd5yT5rI/0.jpg)](https://www.youtube.com/watch?v=jdTRd5yT5rI)
