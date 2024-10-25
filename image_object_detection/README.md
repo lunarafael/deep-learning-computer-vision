@@ -31,3 +31,18 @@ A detecção de objetos com Deep Learning é uma das áreas mais dinâmicas e pr
 ## Fontes
   - https://towardsdatascience.com/yolo-object-detection-with-opencv-and-python-21e50ac599e9
   - https://medium.com/analytics-vidhya/introduction-to-object-detection-using-yolo-ssd-rcnn-26d8302c15a
+  - https://ambolt.io/en/how-object-detectors-learn/#:~:text=The%20loss%20function%20of%20object,in%20predicting%20the%20correct%20class)
+  - https://www.insightlab.ufc.br/aprenda-a-criar-e-treinar-uma-rede-neural-convolucional-cnn/#:~:text=Um%20modelo%20que%20utiliza%20CNN,Pooling%20e%20Camada%20Totalmente%20Conectada.
+  - https://www.geeksforgeeks.org/introduction-convolution-neural-network/#convolution-neural-network
+  - https://pt.linkedin.com/pulse/o-poder-das-redes-neurais-convolucionais-um-guia-pr%C3%A1tico-couto-j7omf
+  - https://medium.com/@abhishekjainindore24/pooling-and-their-types-in-cnn-4a4b8a7a4611
+  - https://ubiai.tools/what-are-the-difficulties-associated-with-data-augmentation/
+  - https://aws.amazon.com/what-is/transfer-learning/#:~:text=Transfer%20learning%20(TL)%20is%20a,it%20is%20ready%20for%20production.
+  - https://medium.com/analytics-vidhya/non-max-suppression-nms-6623e6572536
+  - https://www.thinkautonomous.ai/blog/anchor-boxes/
+  - https://towardsdatascience.com/yolo-object-detection-with-opencv-and-python-21e50ac599e9
+  - https://www.turing.com/kb/ultimate-battle-between-deep-learning-and-machine-learning
+  - https://blog.roboflow.com/what-is-r-cnn/
+  - https://www.v7labs.com/blog/yolo-object-detection
+  - https://medium.datadriveninvestor.com/introducing-transfer-learning-as-your-next-engine-to-drive-future-innovations-5e81a15bb567
+  - https://www.labellerr.com/blog/what-is-data-augmentation-techniques-examples-benefits/
