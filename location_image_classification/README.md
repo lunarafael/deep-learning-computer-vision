@@ -1,3 +1,11 @@
+# Detecção de Objetos (Object Detection)
+A detecção de objetos é uma tarefa de visão computacional que vai além da simples classificação de imagens, ao identificar e localizar múltiplos objetos dentro de uma imagem. Diferentemente da classificação de imagens, que prevê apenas o rótulo mais provável para a imagem como um todo, a detecção de objetos prevê não apenas o rótulo de cada objeto, mas também sua localização precisa, delimitada por caixas de contorno (bounding boxes).
+## Labels e Classificação na Detecção de Objetos
+
+Na detecção de objetos, labels ou rótulos referem-se às categorias ou classes de objetos que o modelo pode identificar em uma imagem. Cada objeto detectado recebe um rótulo que corresponde à sua classe (por exemplo, carro, pessoa, cachorro), e uma bounding box é desenhada ao redor de cada objeto, indicando sua posição exata na imagem.
+
+Além da localização, a detecção de objetos envolve a classificação de cada item detectado, atribuindo a ele um rótulo com uma pontuação de confiança. Isso significa que o modelo não só deve encontrar onde os objetos estão na imagem, mas também determinar a que classe pertencem e o quão confiante está sobre essa predição.
+
 # Classificação de imagens com localização (object localization)
 
 A classificação de imagens com localização é uma tarefa de visão computacional que combina a identificação da classe de objetos em uma imagem com a determinação de sua posição, representada por uma caixa delimitadora. Essa abordagem permite não apenas classificar o objeto, mas também localizar sua área dentro da imagem.
