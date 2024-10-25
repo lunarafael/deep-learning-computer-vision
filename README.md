@@ -37,3 +37,6 @@ O repositório é organizado em diretórios, cada um contendo um README específ
 - **object_detection_applications**: Exemplos de como a detecção de objetos é aplicada em cenários do mundo real.
 
 - **performance_evaluation_techniques**: Técnicas utilizadas para avaliar o desempenho dos modelos de visão computacional.
+
+## Guia para criação de modelo YoLoV8
+[Link](https://colab.research.google.com/drive/1sjYxS9FvXsao7FVWwHQ97MSS8Fg0Adi6?usp=sharing) do Google Colab com o passo a passo para criação de um modelo de detecção de objetos utilizando a arquitetura YoLoV8.
