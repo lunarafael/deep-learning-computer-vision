@@ -76,3 +76,5 @@ Para calcular o IoU (Intersection over Union) usando a matriz de confusão, prec
 
 ​![image](https://github.com/user-attachments/assets/339ec9d8-bfcd-4942-81e0-034f5dd5e6bd)
 
+# Referência:
+IoU: https://learnopencv.com/intersection-over-union-iou-in-object-detection-and-segmentation/
