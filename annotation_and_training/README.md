@@ -31,4 +31,13 @@ Erro de Localização: Medido como a diferença entre as caixas preditas e as ca
 
 Erro de Classificação: Refere-se à previsão incorreta da classe do objeto dentro da caixa. O erro é minimizado usando uma função de perda, como Cross-Entropy Loss.
 
+Data Augmentation: Para aumentar a robustez do modelo e melhorar a generalização, técnicas de data augmentation são aplicadas ao dataset de treinamento. Isso pode incluir:
+
+Rotação ou espelhamento das imagens.
+
+Ajuste no brilho ou contraste.
+
+Zoom ou corte para criar mais variação nas caixas delimitadoras.
+
+
 Treinamento: O treinamento consiste em passar as imagens e suas anotações para o modelo durante várias iterações (épocas). Em cada iteração, o modelo ajusta seus pesos para minimizar a função de custo.
