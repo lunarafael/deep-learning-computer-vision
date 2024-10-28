@@ -58,6 +58,12 @@ Para calcular o IoU (Intersection over Union) usando a matriz de confusão, prec
 
 ![image](https://github.com/user-attachments/assets/157ce21e-16a8-4144-b20e-121e5547c1c4)
 
+![image](https://github.com/user-attachments/assets/d98898af-622a-46c8-a985-0d9dbc6ed27c)
+
+![image](https://github.com/user-attachments/assets/6df40d38-aec7-4625-9374-608a38ad6f84)
+
+![image](https://github.com/user-attachments/assets/dc8193a1-63c6-4f03-8347-db0576d002db)
+
 ![image](https://github.com/user-attachments/assets/f913a4a2-356a-4f31-a0a8-e9de4c911d2d)
 
 ![image](https://github.com/user-attachments/assets/fbc8098d-fae7-4480-b86b-a787157a9d8c)
